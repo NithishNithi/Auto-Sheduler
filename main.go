@@ -22,7 +22,7 @@ func main() {
 
 	// Define your cron schedule (e.g., run every day at midnight)
 	c := cron.New()
-	c.AddFunc("0 23 * * *", func() {
+	c.AddFunc("0 0 23 * * *", func() {
 
 		// Read new content from a data source (e.g., a file or an API)
 
