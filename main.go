@@ -13,7 +13,7 @@ import (
 func main() {
 	// Create a GitHub client using your personal access token
 	ctx := context.Background()
-	// token := "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"
+	// token := ""
 	ts := oauth2.StaticTokenSource(
 		&oauth2.Token{AccessToken: token},
 	)
