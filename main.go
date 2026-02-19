@@ -4,7 +4,7 @@ import (
 	"context"
 	"log"
 	"time"
-
+	"fmt"
 	"github.com/google/go-github/github"
 	"github.com/robfig/cron"
 	"golang.org/x/oauth2"
@@ -12,6 +12,7 @@ import (
 
 func main() {
 	// Create a GitHub client using your personal access token
+	fmt.Println("app starting")
 	ctx := context.Background()
 	token := ""
 	ts := oauth2.StaticTokenSource(
